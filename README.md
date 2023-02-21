@@ -11,6 +11,9 @@ _The script is designed to be launched from the command line with different argu
 Where both arguments are required: output path to the result file, and number of sets which will be used to create the video.<br>
 <br>
 
+## Result video example
+![Result video example](https://touringcrew.com/img_share/slytest02_result.gif)
+
 ## Asciinema examples
 **Creating a video:**<br>
 [![asciicast](https://asciinema.org/a/OgZ5rtlkrvns3r5g2rOK8dHgt.svg)](https://asciinema.org/a/OgZ5rtlkrvns3r5g2rOK8dHgt)<br>
