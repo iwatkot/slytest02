@@ -1,0 +1,6 @@
+.venv/
+.lenv/
+DAVIS/
+*.mp4
+__pycache__/
+logs/
