@@ -1,4 +1,4 @@
-placeholder for CodeClimate badge
+<a href="https://codeclimate.com/github/iwatkot/slytest02/maintainability"><img src="https://api.codeclimate.com/v1/badges/f026010dd2a8a686d17c/maintainability" /></a>
 
 ## Overview
 The repo contains the script, which creates a video from sequences from [DAVIS dataset](https://davischallenge.org/davis2017/code.html).<br>
@@ -10,9 +10,6 @@ _The script is designed to be launched from the command line with different argu
 **Example of splitting the image:** `python3 create_video.py --output_path path/to/file.mp4 --sets_number <>`<br>
 Where both arguments are required: output path to the result file, and number of sets which will be used to create the video.<br>
 <br>
-
-## Result video example
-![Result video example](https://touringcrew.com/img_share/slytest02_result.gif)
 
 ## Asciinema examples
 **Creating a video:**<br>
