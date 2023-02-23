@@ -1,5 +1,4 @@
 import os
-import pathlib
 import argparse
 
 from random import sample
@@ -34,7 +33,7 @@ def get_blended_frame(base_frame: str, set_name: str) -> np.ndarray:
     """
 
     # Changing the filename extension to get the overlay filename.
-    overlay_frame = f"{pathlib.Path(base_frame).stem}.png"
+    overlay_frame = os.path.splitext(base_frame)[0] + '.png'
 
     # Loading base and overlay image objects.
     base_layer = cv2.imread(os.path.join(Constants.JPEG_DIR.value,
