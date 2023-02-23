@@ -47,8 +47,8 @@ def get_blended_frame(base_frame: str, set_name: str) -> np.ndarray:
 
 
 def get_frame_size(image_set: str) -> tuple[int]:
-    """Reads the metadata from the first image in the specified set of the
-    images of the dataset. Returns dimensions of the image.
+    """Reads the dimenstions of the first image in the specified set of the
+    images of the dataset. Returns dimensions of the image in pixels.
 
     Args:
         image_set (str): name of the set of the images in the dataset
@@ -58,10 +58,8 @@ def get_frame_size(image_set: str) -> tuple[int]:
     """
     first_frame = os.listdir(os.path.join(Constants.JPEG_DIR.value,
                                           image_set))[0]
-    frame_width, frame_height = cv2.imread(
-        os.path.join(Constants.JPEG_DIR.value, image_set, first_frame),
-        cv2.IMREAD_ANYDEPTH).shape[1::-1]
-
+    frame_height, frame_width, _ = cv2.imread(
+        os.path.join(Constants.JPEG_DIR.value, image_set, first_frame)).shape
     return frame_width, frame_height
 
 
