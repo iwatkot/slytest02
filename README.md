@@ -7,7 +7,7 @@ The script uses base images from the `JPEGImages` directory and annotation image
 
 ## Get started
 _The script is designed to be launched from the command line with different arguments._<br><br>
-**Example of splitting the image:** `python3 create_video.py --output_path path/to/file.mp4 --sets_number <>`<br>
+**Example of splitting the image:** `python3 create_video.py --output_path path/to/file.mp4 --sets_number 3<>`<br>
 Where both arguments are required: output path to the result file, and a number of sets which will be used to create the video.<br>
 <br>
 
